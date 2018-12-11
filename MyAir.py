@@ -7,6 +7,7 @@ path=''
 path=site.getsitepackages()
 for i in path:
     sys.path.append(i)
+import miio
 
 parser = argparse.ArgumentParser(description='Script which comunicate with AirPurfier.')
 parser.add_argument('IPaddress', help='IP address of AirPurfier' )
