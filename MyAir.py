@@ -8,8 +8,6 @@ path=site.getsitepackages()
 for i in path:
     sys.path.append(i)
 
-import miio.airpurifier
-
 parser = argparse.ArgumentParser(description='Script which comunicate with AirPurfier.')
 parser.add_argument('IPaddress', help='IP address of AirPurfier' )
 parser.add_argument('token', help='token to login to device')
